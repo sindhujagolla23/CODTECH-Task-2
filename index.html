@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogging Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <div id="auth">
+            <h2 id="authTitle">Login</h2>
+            <input type="text" id="username" placeholder="Username">
+            <input type="password" id="password" placeholder="Password">
+            <button onclick="authenticate()">Login</button>
+            <button onclick="showSignUp()">Sign Up</button>
+        </div>
+        <div id="signup" style="display: none;">
+            <h2>Sign Up</h2>
+            <input type="text" id="signupUsername" placeholder="Username">
+            <input type="password" id="signupPassword" placeholder="Password">
+            <button onclick="signUp()">Sign Up</button>
+            <button onclick="showLogin()">Back to Login</button>
+        </div>
+        <div id="blog" style="display: none;">
+            <h2>Welcome, <span id="currentUser"></span></h2>
+            <textarea id="postTitle" placeholder="Post Title"></textarea>
+            <textarea id="postContent" placeholder="Post Content"></textarea>
+            <button onclick="createPost()">Create Post</button>
+            <h3>Your Posts</h3>
+            <div id="postsContainer"></div>
+            <button id="logoutBtn" onclick="logout()">Logout</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
