@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    animation: gradientBackground 10s ease infinite;
+    background-size: 400% 400%;
+}
+
+@keyframes gradientBackground {
+    0% { background-color: #ff7e5f; }
+    25% { background-color: #feb47b; }
+    50% { background-color: #86a8e7; }
+    75% { background-color: #91eae4; }
+    100% { background-color: #ff7e5f; }
+}
+
+#app {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 600px; 
+    max-width: 90%; 
+    min-height: 500px; 
+}
+
+input, textarea, button {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 150px; 
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.deleteBtn, .editBtn, .editCommentBtn {
+    background-color: #ff4d4d;
+    margin-top: 10px;
+    width: auto;
+    padding: 5px 10px;
+}
+
+.editCommentBtn {
+    background-color: #ffc107;
+    margin-left: 5px;
+}
+
+.deleteBtn:hover, .editBtn:hover, .editCommentBtn:hover {
+    background-color: #d43636;
+}
+
+#logoutBtn {
+    background-color: #ff4d4d;
+    margin-top: 20px;
+}
+
+#logoutBtn:hover {
+    background-color: #d43636;
+}
+
+.commentBox {
+    margin-top: 10px;
+}
+
+.commentBtn {
+    margin-top: 5px;
+    background-color: #28a745;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+}
+
+.commentBtn:hover {
+    background-color: #218838;
+}
